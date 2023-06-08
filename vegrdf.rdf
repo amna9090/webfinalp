@@ -1,0 +1,3300 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY vegetable "http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#"
+     xml:base="http://www.semanticweb.org/amna/ontologies/2023/3/vegetable"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:vegetable="http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/amna/ontologies/2023/3/vegetable">
+        <rdfs:comment>The vegetable ontology that describes root or underground and above-ground vegetables along their common names and areas, sceintific names, sowing methods,care instructions, seasons, harvesting, nutritions, vegetable dieases, vegetable cooking ans storage. </rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#after_2weeks -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;after_2weeks">
+        <rdfs:domain rdf:resource="&vegetable;after2_week"/>
+        <rdfs:range rdf:resource="&vegetable;beetroot"/>
+        <rdfs:range rdf:resource="&vegetable;carrot"/>
+        <rdfs:range rdf:resource="&vegetable;cauliflower"/>
+        <rdfs:range rdf:resource="&vegetable;coriander"/>
+        <rdfs:range rdf:resource="&vegetable;fenugreek"/>
+        <rdfs:range rdf:resource="&vegetable;garlic"/>
+        <rdfs:domain rdf:resource="&vegetable;high_bp"/>
+        <rdfs:subPropertyOf rdf:resource="&vegetable;needs_irri"/>
+        <rdfs:range rdf:resource="&vegetable;onion"/>
+        <rdfs:range rdf:resource="&vegetable;peas"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#c_cancer -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;c_cancer">
+        <rdfs:range rdf:resource="&vegetable;Pumpkin"/>
+        <rdfs:range rdf:resource="&vegetable;cabbage"/>
+        <rdfs:domain rdf:resource="&vegetable;cancer"/>
+        <rdfs:range rdf:resource="&vegetable;capsicum"/>
+        <rdfs:range rdf:resource="&vegetable;carrot"/>
+        <rdfs:range rdf:resource="&vegetable;cauliflower"/>
+        <rdfs:subPropertyOf rdf:resource="&vegetable;cures"/>
+        <rdfs:range rdf:resource="&vegetable;garlic"/>
+        <rdfs:range rdf:resource="&vegetable;lady_finger"/>
+        <rdfs:range rdf:resource="&vegetable;spincah"/>
+        <rdfs:range rdf:resource="&vegetable;sweet_potato"/>
+        <rdfs:range rdf:resource="&vegetable;tomato"/>
+        <rdfs:range rdf:resource="&vegetable;turmeric"/>
+        <rdfs:range rdf:resource="&vegetable;turnip"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#c_cough -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;c_cough">
+        <rdfs:range rdf:resource="&vegetable;coriander"/>
+        <rdfs:domain rdf:resource="&vegetable;cough_and_fever"/>
+        <rdfs:subPropertyOf rdf:resource="&vegetable;cures"/>
+        <rdfs:range rdf:resource="&vegetable;fenugreek"/>
+        <rdfs:range rdf:resource="&vegetable;hot_peppers"/>
+        <rdfs:range rdf:resource="&vegetable;luffa_gourd"/>
+        <rdfs:range rdf:resource="&vegetable;mint"/>
+        <rdfs:range rdf:resource="&vegetable;spincah"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#c_diabetes -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;c_diabetes">
+        <rdfs:range rdf:resource="&vegetable;Pumpkin"/>
+        <rdfs:range rdf:resource="&vegetable;bitter_gourd"/>
+        <rdfs:range rdf:resource="&vegetable;capsicum"/>
+        <rdfs:range rdf:resource="&vegetable;carrot"/>
+        <rdfs:range rdf:resource="&vegetable;coriander"/>
+        <rdfs:subPropertyOf rdf:resource="&vegetable;cures"/>
+        <rdfs:domain rdf:resource="&vegetable;diabetes"/>
+        <rdfs:range rdf:resource="&vegetable;ginger"/>
+        <rdfs:range rdf:resource="&vegetable;kidney_bean"/>
+        <rdfs:range rdf:resource="&vegetable;lady_finger"/>
+        <rdfs:range rdf:resource="&vegetable;lettuce"/>
+        <rdfs:range rdf:resource="&vegetable;onion"/>
+        <rdfs:range rdf:resource="&vegetable;peas"/>
+        <rdfs:range rdf:resource="&vegetable;raddish"/>
+        <rdfs:range rdf:resource="&vegetable;spincah"/>
+        <rdfs:range rdf:resource="&vegetable;sweet_potato"/>
+        <rdfs:range rdf:resource="&vegetable;turnip"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#c_heart -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;c_heart">
+        <rdfs:range rdf:resource="&vegetable;Pumpkin"/>
+        <rdfs:range rdf:resource="&vegetable;beetroot"/>
+        <rdfs:range rdf:resource="&vegetable;bitter_gourd"/>
+        <rdfs:range rdf:resource="&vegetable;brinjal"/>
+        <rdfs:range rdf:resource="&vegetable;carrot"/>
+        <rdfs:range rdf:resource="&vegetable;cauliflower"/>
+        <rdfs:range rdf:resource="&vegetable;cucumber"/>
+        <rdfs:subPropertyOf rdf:resource="&vegetable;cures"/>
+        <rdfs:range rdf:resource="&vegetable;garlic"/>
+        <rdfs:range rdf:resource="&vegetable;ginger"/>
+        <rdfs:domain rdf:resource="&vegetable;haert_problems"/>
+        <rdfs:range rdf:resource="&vegetable;lady_finger"/>
+        <rdfs:range rdf:resource="&vegetable;potato"/>
+        <rdfs:range rdf:resource="&vegetable;raddish"/>
+        <rdfs:range rdf:resource="&vegetable;tomato"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#c_highbp -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;c_highbp">
+        <rdfs:range rdf:resource="&vegetable;beetroot"/>
+        <rdfs:range rdf:resource="&vegetable;carrot"/>
+        <rdfs:range rdf:resource="&vegetable;cucumber"/>
+        <rdfs:subPropertyOf rdf:resource="&vegetable;cures"/>
+        <rdfs:range rdf:resource="&vegetable;garlic"/>
+        <rdfs:range rdf:resource="&vegetable;ginger"/>
+        <rdfs:domain rdf:resource="&vegetable;high_bp"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#c_lowbp -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;c_lowbp">
+        <rdfs:subPropertyOf rdf:resource="&vegetable;cures"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#c_lowsugar -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;c_lowsugar">
+        <rdfs:subPropertyOf rdf:resource="&vegetable;cures"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#c_raw -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;c_raw">
+        <rdfs:domain rdf:resource="&vegetable;beetroot"/>
+        <rdfs:subPropertyOf rdf:resource="&vegetable;can_be_cooked"/>
+        <rdfs:domain rdf:resource="&vegetable;carrot"/>
+        <rdfs:domain rdf:resource="&vegetable;cucumber"/>
+        <rdfs:domain rdf:resource="&vegetable;ginger"/>
+        <rdfs:domain rdf:resource="&vegetable;lettuce"/>
+        <rdfs:domain rdf:resource="&vegetable;mint"/>
+        <rdfs:domain rdf:resource="&vegetable;onion"/>
+        <rdfs:domain rdf:resource="&vegetable;raddish"/>
+        <rdfs:range rdf:resource="&vegetable;raw"/>
+        <rdfs:domain rdf:resource="&vegetable;tomato"/>
+        <rdfs:domain rdf:resource="&vegetable;turnip"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#c_salt -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;c_salt">
+        <rdfs:domain rdf:resource="&vegetable;Pumpkin"/>
+        <rdfs:domain rdf:resource="&vegetable;beetroot"/>
+        <rdfs:domain rdf:resource="&vegetable;bitter_gourd"/>
+        <rdfs:domain rdf:resource="&vegetable;brinjal"/>
+        <rdfs:domain rdf:resource="&vegetable;cabbage"/>
+        <rdfs:subPropertyOf rdf:resource="&vegetable;can_be_cooked"/>
+        <rdfs:domain rdf:resource="&vegetable;capsicum"/>
+        <rdfs:domain rdf:resource="&vegetable;carrot"/>
+        <rdfs:domain rdf:resource="&vegetable;cauliflower"/>
+        <rdfs:domain rdf:resource="&vegetable;coriander"/>
+        <rdfs:domain rdf:resource="&vegetable;cucumber"/>
+        <rdfs:domain rdf:resource="&vegetable;fenugreek"/>
+        <rdfs:domain rdf:resource="&vegetable;garlic"/>
+        <rdfs:domain rdf:resource="&vegetable;ginger"/>
+        <rdfs:domain rdf:resource="&vegetable;hot_peppers"/>
+        <rdfs:domain rdf:resource="&vegetable;kidney_bean"/>
+        <rdfs:domain rdf:resource="&vegetable;lady_finger"/>
+        <rdfs:domain rdf:resource="&vegetable;lettuce"/>
+        <rdfs:domain rdf:resource="&vegetable;luffa_gourd"/>
+        <rdfs:domain rdf:resource="&vegetable;mint"/>
+        <rdfs:domain rdf:resource="&vegetable;onion"/>
+        <rdfs:domain rdf:resource="&vegetable;peas"/>
+        <rdfs:domain rdf:resource="&vegetable;potato"/>
+        <rdfs:domain rdf:resource="&vegetable;raddish"/>
+        <rdfs:range rdf:resource="&vegetable;salt_gravy"/>
+        <rdfs:domain rdf:resource="&vegetable;spincah"/>
+        <rdfs:domain rdf:resource="&vegetable;sweet_potato"/>
+        <rdfs:domain rdf:resource="&vegetable;tomato"/>
+        <rdfs:domain rdf:resource="&vegetable;turmeric"/>
+        <rdfs:domain rdf:resource="&vegetable;turnip"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#c_stress -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;c_stress">
+        <rdfs:range rdf:resource="&vegetable;cucumber"/>
+        <rdfs:subPropertyOf rdf:resource="&vegetable;cures"/>
+        <rdfs:range rdf:resource="&vegetable;ginger"/>
+        <rdfs:range rdf:resource="&vegetable;mint"/>
+        <rdfs:range rdf:resource="&vegetable;spincah"/>
+        <rdfs:domain rdf:resource="&vegetable;stress"/>
+        <rdfs:range rdf:resource="&vegetable;turmeric"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#c_sweet -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;c_sweet">
+        <rdfs:domain rdf:resource="&vegetable;Pumpkin"/>
+        <rdfs:domain rdf:resource="&vegetable;beetroot"/>
+        <rdfs:subPropertyOf rdf:resource="&vegetable;can_be_cooked"/>
+        <rdfs:domain rdf:resource="&vegetable;carrot"/>
+        <rdfs:domain rdf:resource="&vegetable;ginger"/>
+        <rdfs:domain rdf:resource="&vegetable;mint"/>
+        <rdfs:domain rdf:resource="&vegetable;potato"/>
+        <rdfs:range rdf:resource="&vegetable;sweet"/>
+        <rdfs:domain rdf:resource="&vegetable;sweet_potato"/>
+        <rdfs:domain rdf:resource="&vegetable;tomato"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#can-be-grown -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;can-be-grown">
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#can_be -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;can_be">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:range rdf:resource="&vegetable;above_ground_vegetables"/>
+        <rdfs:range rdf:resource="&vegetable;mix_type"/>
+        <rdfs:range rdf:resource="&vegetable;root_vegetables"/>
+        <rdfs:domain rdf:resource="&vegetable;vegetable"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#can_be_cooked -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;can_be_cooked">
+        <rdfs:domain rdf:resource="&vegetable;mint"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#can_be_stored -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;can_be_stored"/>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#can_have -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;can_have">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:range rdf:resource="&vegetable;common_names"/>
+        <rdfs:domain rdf:resource="&vegetable;type"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#comes_in_all -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;comes_in_all">
+        <rdfs:range rdf:resource="&vegetable;all_seasons"/>
+        <rdfs:domain rdf:resource="&vegetable;coriander"/>
+        <rdfs:domain rdf:resource="&vegetable;cucumber"/>
+        <rdfs:subPropertyOf rdf:resource="&vegetable;has_season"/>
+        <rdfs:domain rdf:resource="&vegetable;hot_peppers"/>
+        <rdfs:domain rdf:resource="&vegetable;lettuce"/>
+        <rdfs:domain rdf:resource="&vegetable;mint"/>
+        <rdfs:domain rdf:resource="&vegetable;tomato"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#comes_in_sum -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;comes_in_sum">
+        <rdfs:domain rdf:resource="&vegetable;Pumpkin"/>
+        <rdfs:domain rdf:resource="&vegetable;bitter_gourd"/>
+        <rdfs:domain rdf:resource="&vegetable;brinjal"/>
+        <rdfs:domain rdf:resource="&vegetable;capsicum"/>
+        <rdfs:domain rdf:resource="&vegetable;garlic"/>
+        <rdfs:subPropertyOf rdf:resource="&vegetable;has_season"/>
+        <rdfs:domain rdf:resource="&vegetable;kidney_bean"/>
+        <rdfs:domain rdf:resource="&vegetable;lady_finger"/>
+        <rdfs:domain rdf:resource="&vegetable;luffa_gourd"/>
+        <rdfs:range rdf:resource="&vegetable;summer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#comes_in_win -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;comes_in_win">
+        <rdfs:domain rdf:resource="&vegetable;beetroot"/>
+        <rdfs:domain rdf:resource="&vegetable;cabbage"/>
+        <rdfs:domain rdf:resource="&vegetable;carrot"/>
+        <rdfs:domain rdf:resource="&vegetable;cauliflower"/>
+        <owl:inverseOf rdf:resource="&vegetable;comes_in_sum"/>
+        <rdfs:domain rdf:resource="&vegetable;fenugreek"/>
+        <rdfs:domain rdf:resource="&vegetable;ginger"/>
+        <rdfs:subPropertyOf rdf:resource="&vegetable;has_season"/>
+        <rdfs:domain rdf:resource="&vegetable;onion"/>
+        <rdfs:domain rdf:resource="&vegetable;peas"/>
+        <rdfs:domain rdf:resource="&vegetable;potato"/>
+        <rdfs:domain rdf:resource="&vegetable;raddish"/>
+        <rdfs:domain rdf:resource="&vegetable;spincah"/>
+        <rdfs:domain rdf:resource="&vegetable;sweet_potato"/>
+        <rdfs:domain rdf:resource="&vegetable;turmeric"/>
+        <rdfs:domain rdf:resource="&vegetable;turnip"/>
+        <rdfs:range rdf:resource="&vegetable;winter"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#consists_of -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;consists_of">
+        <rdfs:domain rdf:resource="&vegetable;plant"/>
+        <rdfs:range rdf:resource="&vegetable;vegetable"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#cures -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;cures"/>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#from3_4d -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;from3_4d">
+        <rdfs:range rdf:resource="&vegetable;Pumpkin"/>
+        <rdfs:domain rdf:resource="&vegetable;after3_4d"/>
+        <rdfs:range rdf:resource="&vegetable;brinjal"/>
+        <rdfs:range rdf:resource="&vegetable;cucumber"/>
+        <rdfs:range rdf:resource="&vegetable;lady_finger"/>
+        <rdfs:subPropertyOf rdf:resource="&vegetable;needs_irri"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#from_1week -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;from_1week">
+        <rdfs:domain rdf:resource="&vegetable;after1_week"/>
+        <rdfs:range rdf:resource="&vegetable;bitter_gourd"/>
+        <rdfs:range rdf:resource="&vegetable;capsicum"/>
+        <rdfs:range rdf:resource="&vegetable;coriander"/>
+        <rdfs:range rdf:resource="&vegetable;hot_peppers"/>
+        <rdfs:range rdf:resource="&vegetable;kidney_bean"/>
+        <rdfs:range rdf:resource="&vegetable;lettuce"/>
+        <rdfs:range rdf:resource="&vegetable;luffa_gourd"/>
+        <rdfs:range rdf:resource="&vegetable;mint"/>
+        <rdfs:subPropertyOf rdf:resource="&vegetable;needs_irri"/>
+        <rdfs:range rdf:resource="&vegetable;potato"/>
+        <rdfs:range rdf:resource="&vegetable;raddish"/>
+        <rdfs:range rdf:resource="&vegetable;spincah"/>
+        <rdfs:range rdf:resource="&vegetable;sweet_potato"/>
+        <rdfs:range rdf:resource="&vegetable;tomato"/>
+        <rdfs:range rdf:resource="&vegetable;turmeric"/>
+        <rdfs:range rdf:resource="&vegetable;turnip"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#grow_aero -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;grow_aero">
+        <rdfs:domain rdf:resource="&vegetable;Pumpkin"/>
+        <rdfs:range rdf:resource="&vegetable;ayes"/>
+        <rdfs:domain rdf:resource="&vegetable;beetroot"/>
+        <rdfs:domain rdf:resource="&vegetable;bitter_gourd"/>
+        <rdfs:domain rdf:resource="&vegetable;brinjal"/>
+        <rdfs:domain rdf:resource="&vegetable;cabbage"/>
+        <rdfs:subPropertyOf rdf:resource="&vegetable;can-be-grown"/>
+        <rdfs:domain rdf:resource="&vegetable;capsicum"/>
+        <rdfs:domain rdf:resource="&vegetable;carrot"/>
+        <rdfs:domain rdf:resource="&vegetable;cauliflower"/>
+        <rdfs:domain rdf:resource="&vegetable;coriander"/>
+        <rdfs:domain rdf:resource="&vegetable;cucumber"/>
+        <rdfs:domain rdf:resource="&vegetable;fenugreek"/>
+        <rdfs:domain rdf:resource="&vegetable;garlic"/>
+        <rdfs:domain rdf:resource="&vegetable;ginger"/>
+        <rdfs:domain rdf:resource="&vegetable;hot_peppers"/>
+        <rdfs:domain rdf:resource="&vegetable;kidney_bean"/>
+        <rdfs:domain rdf:resource="&vegetable;lady_finger"/>
+        <rdfs:domain rdf:resource="&vegetable;lettuce"/>
+        <rdfs:domain rdf:resource="&vegetable;luffa_gourd"/>
+        <rdfs:domain rdf:resource="&vegetable;mint"/>
+        <rdfs:domain rdf:resource="&vegetable;onion"/>
+        <rdfs:domain rdf:resource="&vegetable;peas"/>
+        <rdfs:domain rdf:resource="&vegetable;potato"/>
+        <rdfs:domain rdf:resource="&vegetable;raddish"/>
+        <rdfs:domain rdf:resource="&vegetable;spincah"/>
+        <rdfs:domain rdf:resource="&vegetable;sweet_potato"/>
+        <rdfs:domain rdf:resource="&vegetable;tomato"/>
+        <rdfs:domain rdf:resource="&vegetable;turmeric"/>
+        <rdfs:domain rdf:resource="&vegetable;turnip"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#grow_hydro -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;grow_hydro">
+        <rdfs:domain rdf:resource="&vegetable;Pumpkin"/>
+        <rdfs:domain rdf:resource="&vegetable;beetroot"/>
+        <rdfs:domain rdf:resource="&vegetable;bitter_gourd"/>
+        <rdfs:domain rdf:resource="&vegetable;brinjal"/>
+        <rdfs:domain rdf:resource="&vegetable;cabbage"/>
+        <rdfs:subPropertyOf rdf:resource="&vegetable;can-be-grown"/>
+        <rdfs:domain rdf:resource="&vegetable;capsicum"/>
+        <rdfs:domain rdf:resource="&vegetable;carrot"/>
+        <rdfs:domain rdf:resource="&vegetable;cauliflower"/>
+        <rdfs:domain rdf:resource="&vegetable;coriander"/>
+        <rdfs:domain rdf:resource="&vegetable;cucumber"/>
+        <rdfs:domain rdf:resource="&vegetable;fenugreek"/>
+        <rdfs:domain rdf:resource="&vegetable;garlic"/>
+        <rdfs:domain rdf:resource="&vegetable;ginger"/>
+        <rdfs:domain rdf:resource="&vegetable;hot_peppers"/>
+        <rdfs:range rdf:resource="&vegetable;hyes"/>
+        <rdfs:domain rdf:resource="&vegetable;lady_finger"/>
+        <rdfs:domain rdf:resource="&vegetable;lettuce"/>
+        <rdfs:domain rdf:resource="&vegetable;luffa_gourd"/>
+        <rdfs:domain rdf:resource="&vegetable;mint"/>
+        <rdfs:domain rdf:resource="&vegetable;onion"/>
+        <rdfs:domain rdf:resource="&vegetable;peas"/>
+        <rdfs:domain rdf:resource="&vegetable;potato"/>
+        <rdfs:domain rdf:resource="&vegetable;raddish"/>
+        <rdfs:domain rdf:resource="&vegetable;spincah"/>
+        <rdfs:domain rdf:resource="&vegetable;sweet_potato"/>
+        <rdfs:domain rdf:resource="&vegetable;tomato"/>
+        <rdfs:domain rdf:resource="&vegetable;turmeric"/>
+        <rdfs:domain rdf:resource="&vegetable;turnip"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#has_season -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;has_season"/>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#have_antio -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;have_antio">
+        <rdfs:range rdf:resource="&vegetable;anti_oxidant"/>
+        <rdfs:domain rdf:resource="&vegetable;beetroot"/>
+        <rdfs:subPropertyOf rdf:resource="&vegetable;have_nutrition"/>
+        <rdfs:domain rdf:resource="&vegetable;spincah"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#have_bean -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;have_bean">
+        <rdfs:subPropertyOf rdf:resource="&vegetable;have_sci_name"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#have_beans -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;have_beans">
+        <rdfs:subPropertyOf rdf:resource="&vegetable;have_sci_name"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#have_beet -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;have_beet">
+        <rdfs:subPropertyOf rdf:resource="&vegetable;have_sci_name"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#have_bitt -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;have_bitt">
+        <rdfs:subPropertyOf rdf:resource="&vegetable;have_sci_name"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#have_brin -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;have_brin">
+        <rdfs:subPropertyOf rdf:resource="&vegetable;have_sci_name"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#have_cabb -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;have_cabb">
+        <rdfs:subPropertyOf rdf:resource="&vegetable;have_sci_name"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#have_caps -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;have_caps">
+        <rdfs:subPropertyOf rdf:resource="&vegetable;have_sci_name"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#have_carr -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;have_carr">
+        <rdfs:subPropertyOf rdf:resource="&vegetable;have_sci_name"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#have_caul -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;have_caul">
+        <rdfs:subPropertyOf rdf:resource="&vegetable;have_sci_name"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#have_coli -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;have_coli">
+        <rdfs:subPropertyOf rdf:resource="&vegetable;have_sci_name"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#have_com_name -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;have_com_name">
+        <owl:inverseOf rdf:resource="&vegetable;have_sci_name"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#have_cori -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;have_cori">
+        <rdfs:subPropertyOf rdf:resource="&vegetable;have_sci_name"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#have_cucu -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;have_cucu">
+        <rdfs:subPropertyOf rdf:resource="&vegetable;have_sci_name"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#have_eggp -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;have_eggp">
+        <rdfs:subPropertyOf rdf:resource="&vegetable;have_sci_name"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#have_fenu -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;have_fenu">
+        <rdfs:subPropertyOf rdf:resource="&vegetable;have_sci_name"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#have_fibre -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;have_fibre">
+        <rdfs:domain rdf:resource="&vegetable;beetroot"/>
+        <rdfs:domain rdf:resource="&vegetable;carrot"/>
+        <rdfs:range rdf:resource="&vegetable;fibre"/>
+        <rdfs:subPropertyOf rdf:resource="&vegetable;have_nutrition"/>
+        <rdfs:domain rdf:resource="&vegetable;spincah"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#have_garl -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;have_garl">
+        <rdfs:subPropertyOf rdf:resource="&vegetable;have_sci_name"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#have_ging -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;have_ging">
+        <rdfs:subPropertyOf rdf:resource="&vegetable;have_sci_name"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#have_lady -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;have_lady">
+        <rdfs:subPropertyOf rdf:resource="&vegetable;have_sci_name"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#have_lett -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;have_lett">
+        <rdfs:subPropertyOf rdf:resource="&vegetable;have_sci_name"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#have_luff -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;have_luff">
+        <rdfs:subPropertyOf rdf:resource="&vegetable;have_sci_name"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#have_m -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;have_m">
+        <rdfs:subPropertyOf rdf:resource="&vegetable;have_nutrition"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#have_m-eggp -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;have_m-eggp">
+        <rdfs:subPropertyOf rdf:resource="&vegetable;have_m"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#have_m-lady -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;have_m-lady">
+        <rdfs:subPropertyOf rdf:resource="&vegetable;have_m"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#have_m-spin -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;have_m-spin">
+        <rdfs:range rdf:resource="&vegetable;calcium"/>
+        <rdfs:subPropertyOf rdf:resource="&vegetable;have_m"/>
+        <rdfs:range rdf:resource="&vegetable;iron"/>
+        <rdfs:range rdf:resource="&vegetable;magnesium"/>
+        <rdfs:domain rdf:resource="&vegetable;spincah"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#have_m_beet -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;have_m_beet">
+        <rdfs:domain rdf:resource="&vegetable;beetroot"/>
+        <rdfs:subPropertyOf rdf:resource="&vegetable;have_m"/>
+        <rdfs:range rdf:resource="&vegetable;iron"/>
+        <rdfs:range rdf:resource="&vegetable;manganese"/>
+        <rdfs:range rdf:resource="&vegetable;potassium"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#have_m_bitt -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;have_m_bitt">
+        <rdfs:subPropertyOf rdf:resource="&vegetable;have_m"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#have_m_carr -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;have_m_carr">
+        <rdfs:domain rdf:resource="&vegetable;carrot"/>
+        <rdfs:subPropertyOf rdf:resource="&vegetable;have_m"/>
+        <rdfs:range rdf:resource="&vegetable;potassium"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#have_m_caul -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;have_m_caul">
+        <rdfs:subPropertyOf rdf:resource="&vegetable;have_m"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#have_m_cori -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;have_m_cori">
+        <rdfs:subPropertyOf rdf:resource="&vegetable;have_m"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#have_m_garl -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;have_m_garl">
+        <rdfs:range rdf:resource="&vegetable;calcium"/>
+        <rdfs:domain rdf:resource="&vegetable;garlic"/>
+        <rdfs:subPropertyOf rdf:resource="&vegetable;have_m"/>
+        <rdfs:range rdf:resource="&vegetable;iron"/>
+        <rdfs:range rdf:resource="&vegetable;magnesium"/>
+        <rdfs:range rdf:resource="&vegetable;manganese"/>
+        <rdfs:range rdf:resource="&vegetable;potassium"/>
+        <rdfs:range rdf:resource="&vegetable;zinc"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#have_m_ging -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;have_m_ging">
+        <rdfs:range rdf:resource="&vegetable;calcium"/>
+        <rdfs:domain rdf:resource="&vegetable;ginger"/>
+        <rdfs:subPropertyOf rdf:resource="&vegetable;have_m"/>
+        <rdfs:range rdf:resource="&vegetable;iron"/>
+        <rdfs:range rdf:resource="&vegetable;magnesium"/>
+        <rdfs:range rdf:resource="&vegetable;potassium"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#have_m_luff -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;have_m_luff">
+        <rdfs:subPropertyOf rdf:resource="&vegetable;have_m"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#have_m_mint -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;have_m_mint">
+        <rdfs:subPropertyOf rdf:resource="&vegetable;have_m"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#have_m_onio -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;have_m_onio">
+        <rdfs:range rdf:resource="&vegetable;calcium"/>
+        <rdfs:subPropertyOf rdf:resource="&vegetable;have_m"/>
+        <rdfs:range rdf:resource="&vegetable;iron"/>
+        <rdfs:range rdf:resource="&vegetable;manganese"/>
+        <rdfs:domain rdf:resource="&vegetable;onion"/>
+        <rdfs:range rdf:resource="&vegetable;potassium"/>
+        <rdfs:range rdf:resource="&vegetable;sulfur"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#have_m_peas -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;have_m_peas">
+        <rdfs:subPropertyOf rdf:resource="&vegetable;have_m"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#have_m_pota -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;have_m_pota">
+        <rdfs:range rdf:resource="&vegetable;calcium"/>
+        <rdfs:subPropertyOf rdf:resource="&vegetable;have_m"/>
+        <rdfs:range rdf:resource="&vegetable;iron"/>
+        <rdfs:range rdf:resource="&vegetable;magnesium"/>
+        <rdfs:domain rdf:resource="&vegetable;potato"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#have_m_pump -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;have_m_pump">
+        <rdfs:subPropertyOf rdf:resource="&vegetable;have_m"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#have_m_radd -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;have_m_radd">
+        <rdfs:range rdf:resource="&vegetable;calcium"/>
+        <rdfs:subPropertyOf rdf:resource="&vegetable;have_m"/>
+        <rdfs:range rdf:resource="&vegetable;iron"/>
+        <rdfs:range rdf:resource="&vegetable;magnesium"/>
+        <rdfs:range rdf:resource="&vegetable;potassium"/>
+        <rdfs:domain rdf:resource="&vegetable;raddish"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#have_m_sweet -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;have_m_sweet">
+        <rdfs:range rdf:resource="&vegetable;calcium"/>
+        <rdfs:range rdf:resource="&vegetable;fibre"/>
+        <rdfs:subPropertyOf rdf:resource="&vegetable;have_m"/>
+        <rdfs:range rdf:resource="&vegetable;iron"/>
+        <rdfs:range rdf:resource="&vegetable;magnesium"/>
+        <rdfs:domain rdf:resource="&vegetable;sweet_potato"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#have_m_toma -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;have_m_toma">
+        <rdfs:subPropertyOf rdf:resource="&vegetable;have_m"/>
+        <rdfs:range rdf:resource="&vegetable;potassium"/>
+        <rdfs:domain rdf:resource="&vegetable;tomato"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#have_m_turm -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;have_m_turm">
+        <rdfs:range rdf:resource="&vegetable;fibre"/>
+        <rdfs:subPropertyOf rdf:resource="&vegetable;have_m"/>
+        <rdfs:range rdf:resource="&vegetable;iron"/>
+        <rdfs:range rdf:resource="&vegetable;manganese"/>
+        <rdfs:range rdf:resource="&vegetable;potassium"/>
+        <rdfs:domain rdf:resource="&vegetable;turmeric"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#have_m_turn -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;have_m_turn">
+        <rdfs:range rdf:resource="&vegetable;calcium"/>
+        <rdfs:subPropertyOf rdf:resource="&vegetable;have_m"/>
+        <rdfs:range rdf:resource="&vegetable;iron"/>
+        <rdfs:range rdf:resource="&vegetable;magnesium"/>
+        <rdfs:range rdf:resource="&vegetable;potassium"/>
+        <rdfs:domain rdf:resource="&vegetable;turnip"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#have_mint -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;have_mint">
+        <rdfs:subPropertyOf rdf:resource="&vegetable;have_sci_name"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#have_nutrition -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;have_nutrition"/>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#have_onio -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;have_onio">
+        <rdfs:subPropertyOf rdf:resource="&vegetable;have_sci_name"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#have_peas -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;have_peas">
+        <rdfs:subPropertyOf rdf:resource="&vegetable;have_sci_name"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#have_pota -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;have_pota">
+        <rdfs:subPropertyOf rdf:resource="&vegetable;have_sci_name"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#have_potato -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;have_potato">
+        <rdfs:subPropertyOf rdf:resource="&vegetable;have_sci_name"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#have_protien -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;have_protien">
+        <rdfs:subPropertyOf rdf:resource="&vegetable;have_nutrition"/>
+        <rdfs:range rdf:resource="&vegetable;protien"/>
+        <rdfs:domain rdf:resource="&vegetable;tomato"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#have_radd -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;have_radd">
+        <rdfs:subPropertyOf rdf:resource="&vegetable;have_sci_name"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#have_s_span_1 -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;have_s_span_1">
+        <rdfs:range rdf:resource="&vegetable;April"/>
+        <rdfs:range rdf:resource="&vegetable;February"/>
+        <rdfs:range rdf:resource="&vegetable;March"/>
+        <rdfs:subPropertyOf rdf:resource="&vegetable;have_span_s"/>
+        <rdfs:domain rdf:resource="&vegetable;summer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#have_s_span_2 -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;have_s_span_2">
+        <rdfs:subPropertyOf rdf:resource="&vegetable;have_span_s"/>
+        <rdfs:range rdf:resource="&vegetable;july"/>
+        <rdfs:range rdf:resource="&vegetable;june"/>
+        <rdfs:domain rdf:resource="&vegetable;summer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#have_sci_name -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;have_sci_name"/>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#have_span_s -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;have_span_s">
+        <rdfs:domain rdf:resource="&vegetable;summer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#have_span_w -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;have_span_w">
+        <rdfs:range rdf:resource="&vegetable;august"/>
+        <rdfs:range rdf:resource="&vegetable;november"/>
+        <rdfs:range rdf:resource="&vegetable;october"/>
+        <rdfs:range rdf:resource="&vegetable;september"/>
+        <rdfs:domain rdf:resource="&vegetable;winter"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#have_spin -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;have_spin">
+        <rdfs:subPropertyOf rdf:resource="&vegetable;have_sci_name"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#have_swee -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;have_swee">
+        <rdfs:subPropertyOf rdf:resource="&vegetable;have_sci_name"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#have_toma -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;have_toma">
+        <rdfs:subPropertyOf rdf:resource="&vegetable;have_sci_name"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#have_turm -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;have_turm">
+        <rdfs:subPropertyOf rdf:resource="&vegetable;have_sci_name"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#have_turn -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;have_turn">
+        <rdfs:subPropertyOf rdf:resource="&vegetable;have_sci_name"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#have_v -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;have_v">
+        <rdfs:subPropertyOf rdf:resource="&vegetable;have_nutrition"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#have_v_beet -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;have_v_beet">
+        <rdfs:range rdf:resource="&vegetable;C"/>
+        <rdfs:domain rdf:resource="&vegetable;beetroot"/>
+        <rdfs:range rdf:resource="&vegetable;folic_acid"/>
+        <rdfs:subPropertyOf rdf:resource="&vegetable;have_v"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#have_v_bitt -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;have_v_bitt">
+        <rdfs:subPropertyOf rdf:resource="&vegetable;have_v"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#have_v_cabb -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;have_v_cabb">
+        <rdfs:subPropertyOf rdf:resource="&vegetable;have_v"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#have_v_carr -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;have_v_carr">
+        <rdfs:range rdf:resource="&vegetable;A"/>
+        <rdfs:range rdf:resource="&vegetable;B"/>
+        <rdfs:range rdf:resource="&vegetable;C"/>
+        <rdfs:range rdf:resource="&vegetable;K"/>
+        <rdfs:domain rdf:resource="&vegetable;carrot"/>
+        <rdfs:range rdf:resource="&vegetable;folic_acid"/>
+        <rdfs:subPropertyOf rdf:resource="&vegetable;have_v"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#have_v_caul -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;have_v_caul">
+        <rdfs:subPropertyOf rdf:resource="&vegetable;have_v"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#have_v_cori -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;have_v_cori">
+        <rdfs:subPropertyOf rdf:resource="&vegetable;have_v"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#have_v_cucu -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;have_v_cucu">
+        <rdfs:range rdf:resource="&vegetable;A"/>
+        <rdfs:range rdf:resource="&vegetable;B"/>
+        <rdfs:range rdf:resource="&vegetable;C"/>
+        <rdfs:domain rdf:resource="&vegetable;cucumber"/>
+        <rdfs:range rdf:resource="&vegetable;folic_acid"/>
+        <rdfs:subPropertyOf rdf:resource="&vegetable;have_v"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#have_v_eggp -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;have_v_eggp">
+        <rdfs:subPropertyOf rdf:resource="&vegetable;have_v"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#have_v_garl -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;have_v_garl">
+        <rdfs:range rdf:resource="&vegetable;C"/>
+        <rdfs:range rdf:resource="&vegetable;E"/>
+        <rdfs:range rdf:resource="&vegetable;K"/>
+        <rdfs:domain rdf:resource="&vegetable;garlic"/>
+        <rdfs:subPropertyOf rdf:resource="&vegetable;have_v"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#have_v_ging -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;have_v_ging">
+        <rdfs:range rdf:resource="&vegetable;B"/>
+        <rdfs:range rdf:resource="&vegetable;C"/>
+        <rdfs:domain rdf:resource="&vegetable;ginger"/>
+        <rdfs:subPropertyOf rdf:resource="&vegetable;have_v"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#have_v_hot_p -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;have_v_hot_p">
+        <rdfs:subPropertyOf rdf:resource="&vegetable;have_v"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#have_v_lady -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;have_v_lady">
+        <rdfs:subPropertyOf rdf:resource="&vegetable;have_v"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#have_v_luff -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;have_v_luff">
+        <rdfs:subPropertyOf rdf:resource="&vegetable;have_v"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#have_v_mint -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;have_v_mint">
+        <rdfs:subPropertyOf rdf:resource="&vegetable;have_v"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#have_v_onio -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;have_v_onio">
+        <rdfs:range rdf:resource="&vegetable;B"/>
+        <rdfs:range rdf:resource="&vegetable;C"/>
+        <rdfs:subPropertyOf rdf:resource="&vegetable;have_v"/>
+        <rdfs:domain rdf:resource="&vegetable;onion"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#have_v_pota -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;have_v_pota">
+        <rdfs:range rdf:resource="&vegetable;B"/>
+        <rdfs:range rdf:resource="&vegetable;C"/>
+        <rdfs:subPropertyOf rdf:resource="&vegetable;have_v"/>
+        <rdfs:domain rdf:resource="&vegetable;potato"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#have_v_pump -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;have_v_pump">
+        <rdfs:subPropertyOf rdf:resource="&vegetable;have_v"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#have_v_radd -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;have_v_radd">
+        <rdfs:range rdf:resource="&vegetable;C"/>
+        <rdfs:subPropertyOf rdf:resource="&vegetable;have_v"/>
+        <rdfs:domain rdf:resource="&vegetable;raddish"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#have_v_spin -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;have_v_spin">
+        <rdfs:range rdf:resource="&vegetable;A"/>
+        <rdfs:range rdf:resource="&vegetable;C"/>
+        <rdfs:range rdf:resource="&vegetable;K"/>
+        <rdfs:range rdf:resource="&vegetable;folic_acid"/>
+        <rdfs:subPropertyOf rdf:resource="&vegetable;have_v"/>
+        <rdfs:domain rdf:resource="&vegetable;spincah"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#have_v_sweet -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;have_v_sweet">
+        <rdfs:range rdf:resource="&vegetable;B"/>
+        <rdfs:range rdf:resource="&vegetable;C"/>
+        <rdfs:subPropertyOf rdf:resource="&vegetable;have_v"/>
+        <rdfs:domain rdf:resource="&vegetable;sweet_potato"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#have_v_toma -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;have_v_toma">
+        <rdfs:range rdf:resource="&vegetable;C"/>
+        <rdfs:range rdf:resource="&vegetable;K"/>
+        <rdfs:range rdf:resource="&vegetable;folic_acid"/>
+        <rdfs:subPropertyOf rdf:resource="&vegetable;have_v"/>
+        <rdfs:domain rdf:resource="&vegetable;tomato"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#have_v_turm -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;have_v_turm">
+        <rdfs:range rdf:resource="&vegetable;C"/>
+        <rdfs:subPropertyOf rdf:resource="&vegetable;have_v"/>
+        <rdfs:domain rdf:resource="&vegetable;turmeric"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#have_v_turn -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;have_v_turn">
+        <rdfs:range rdf:resource="&vegetable;B"/>
+        <rdfs:range rdf:resource="&vegetable;C"/>
+        <rdfs:subPropertyOf rdf:resource="&vegetable;have_v"/>
+        <rdfs:domain rdf:resource="&vegetable;turnip"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#hvae_chill -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;hvae_chill">
+        <rdfs:subPropertyOf rdf:resource="&vegetable;have_sci_name"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#is_a -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;is_a">
+        <rdf:type rdf:resource="&owl;InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="&vegetable;above_ground_vegetables"/>
+        <owl:inverseOf rdf:resource="&vegetable;can_be"/>
+        <rdfs:domain rdf:resource="&vegetable;root_vegetables"/>
+        <rdfs:range rdf:resource="&vegetable;vegetable"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#is_as_adra -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;is_as_adra">
+        <rdfs:subPropertyOf rdf:resource="&vegetable;have_com_name"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#is_as_bain -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;is_as_bain">
+        <rdfs:subPropertyOf rdf:resource="&vegetable;have_com_name"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#is_as_bhin -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;is_as_bhin">
+        <rdfs:subPropertyOf rdf:resource="&vegetable;have_com_name"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#is_as_bndg -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;is_as_bndg">
+        <rdfs:subPropertyOf rdf:resource="&vegetable;have_com_name"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#is_as_chuq -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;is_as_chuq">
+        <rdfs:subPropertyOf rdf:resource="&vegetable;have_com_name"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#is_as_dhan -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;is_as_dhan">
+        <rdfs:subPropertyOf rdf:resource="&vegetable;have_com_name"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#is_as_gajj -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;is_as_gajj">
+        <rdfs:subPropertyOf rdf:resource="&vegetable;have_com_name"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#is_as_kado -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;is_as_kado">
+        <rdfs:subPropertyOf rdf:resource="&vegetable;have_com_name"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#is_as_kali -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;is_as_kali">
+        <rdfs:subPropertyOf rdf:resource="&vegetable;have_com_name"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#is_as_kher -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;is_as_kher">
+        <rdfs:subPropertyOf rdf:resource="&vegetable;have_com_name"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#is_as_krai -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;is_as_krai">
+        <rdfs:subPropertyOf rdf:resource="&vegetable;have_com_name"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#is_as_lehs -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;is_as_lehs">
+        <rdfs:subPropertyOf rdf:resource="&vegetable;have_com_name"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#is_as_lobi -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;is_as_lobi">
+        <rdfs:subPropertyOf rdf:resource="&vegetable;have_com_name"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#is_as_mata -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;is_as_mata">
+        <rdfs:subPropertyOf rdf:resource="&vegetable;have_com_name"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#is_as_meth -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;is_as_meth">
+        <rdfs:subPropertyOf rdf:resource="&vegetable;have_com_name"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#is_as_mirc -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;is_as_mirc">
+        <rdfs:subPropertyOf rdf:resource="&vegetable;have_com_name"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#is_as_mool -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;is_as_mool">
+        <rdfs:subPropertyOf rdf:resource="&vegetable;have_com_name"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#is_as_pala -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;is_as_pala">
+        <rdfs:subPropertyOf rdf:resource="&vegetable;have_com_name"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#is_as_phol -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;is_as_phol">
+        <rdfs:subPropertyOf rdf:resource="&vegetable;have_com_name"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#is_as_piya -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;is_as_piya">
+        <rdfs:subPropertyOf rdf:resource="&vegetable;have_com_name"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#is_as_podi -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;is_as_podi">
+        <rdfs:subPropertyOf rdf:resource="&vegetable;have_com_name"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#is_as_pota -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;is_as_pota">
+        <rdfs:subPropertyOf rdf:resource="&vegetable;have_com_name"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#is_as_shal -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;is_as_shal">
+        <rdfs:subPropertyOf rdf:resource="&vegetable;have_com_name"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#is_as_shimla -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;is_as_shimla">
+        <rdfs:subPropertyOf rdf:resource="&vegetable;have_com_name"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#is_as_shkr -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;is_as_shkr">
+        <rdfs:subPropertyOf rdf:resource="&vegetable;have_com_name"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#is_as_sladp -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;is_as_sladp">
+        <rdfs:subPropertyOf rdf:resource="&vegetable;have_com_name"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#is_as_toma -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;is_as_toma">
+        <rdfs:subPropertyOf rdf:resource="&vegetable;have_com_name"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#n_temp_15c -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;n_temp_15c">
+        <rdfs:domain rdf:resource="&vegetable;15_to_below0"/>
+        <rdfs:range rdf:resource="&vegetable;beetroot"/>
+        <rdfs:range rdf:resource="&vegetable;carrot"/>
+        <rdfs:range rdf:resource="&vegetable;cauliflower"/>
+        <rdfs:range rdf:resource="&vegetable;coriander"/>
+        <rdfs:range rdf:resource="&vegetable;fenugreek"/>
+        <rdfs:range rdf:resource="&vegetable;hot_peppers"/>
+        <rdfs:subPropertyOf rdf:resource="&vegetable;needs_temp"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#n_temp_32c -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;n_temp_32c">
+        <rdfs:domain rdf:resource="&vegetable;15_32"/>
+        <rdfs:range rdf:resource="&vegetable;bitter_gourd"/>
+        <rdfs:range rdf:resource="&vegetable;brinjal"/>
+        <rdfs:range rdf:resource="&vegetable;coriander"/>
+        <rdfs:range rdf:resource="&vegetable;garlic"/>
+        <rdfs:range rdf:resource="&vegetable;ginger"/>
+        <rdfs:range rdf:resource="&vegetable;hot_peppers"/>
+        <rdfs:range rdf:resource="&vegetable;kidney_bean"/>
+        <rdfs:range rdf:resource="&vegetable;lettuce"/>
+        <rdfs:range rdf:resource="&vegetable;luffa_gourd"/>
+        <rdfs:subPropertyOf rdf:resource="&vegetable;needs_temp"/>
+        <rdfs:range rdf:resource="&vegetable;onion"/>
+        <rdfs:range rdf:resource="&vegetable;peas"/>
+        <rdfs:range rdf:resource="&vegetable;potato"/>
+        <rdfs:range rdf:resource="&vegetable;raddish"/>
+        <rdfs:range rdf:resource="&vegetable;spincah"/>
+        <rdfs:range rdf:resource="&vegetable;sweet_potato"/>
+        <rdfs:range rdf:resource="&vegetable;tomato"/>
+        <rdfs:range rdf:resource="&vegetable;turmeric"/>
+        <rdfs:range rdf:resource="&vegetable;turnip"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#n_temp_45c -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;n_temp_45c">
+        <rdfs:domain rdf:resource="&vegetable;33_45"/>
+        <rdfs:range rdf:resource="&vegetable;Pumpkin"/>
+        <rdfs:range rdf:resource="&vegetable;capsicum"/>
+        <rdfs:range rdf:resource="&vegetable;cucumber"/>
+        <rdfs:range rdf:resource="&vegetable;lady_finger"/>
+        <rdfs:range rdf:resource="&vegetable;mint"/>
+        <rdfs:subPropertyOf rdf:resource="&vegetable;needs_temp"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#needs_care -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;needs_care"/>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#needs_irri -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;needs_irri">
+        <rdfs:subPropertyOf rdf:resource="&vegetable;needs_care"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#needs_temp -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;needs_temp">
+        <rdfs:subPropertyOf rdf:resource="&vegetable;needs_care"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#no -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;no">
+        <rdfs:subPropertyOf rdf:resource="&vegetable;can_be_stored"/>
+        <rdfs:range rdf:resource="&vegetable;store"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#on_dailybasis -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;on_dailybasis">
+        <rdfs:domain rdf:resource="&vegetable;everyday"/>
+        <rdfs:subPropertyOf rdf:resource="&vegetable;needs_irri"/>
+        <rdfs:range rdf:resource="&vegetable;sweet_potato"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#s_direct -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;s_direct">
+        <rdfs:range rdf:resource="&vegetable;Pumpkin"/>
+        <rdfs:range rdf:resource="&vegetable;beetroot"/>
+        <rdfs:range rdf:resource="&vegetable;bitter_gourd"/>
+        <rdfs:range rdf:resource="&vegetable;carrot"/>
+        <rdfs:range rdf:resource="&vegetable;coriander"/>
+        <rdfs:range rdf:resource="&vegetable;cucumber"/>
+        <rdfs:domain rdf:resource="&vegetable;direct_in_field"/>
+        <rdfs:range rdf:resource="&vegetable;garlic"/>
+        <rdfs:range rdf:resource="&vegetable;hot_peppers"/>
+        <rdfs:range rdf:resource="&vegetable;kidney_bean"/>
+        <rdfs:range rdf:resource="&vegetable;lady_finger"/>
+        <rdfs:range rdf:resource="&vegetable;peas"/>
+        <rdfs:range rdf:resource="&vegetable;potato"/>
+        <rdfs:range rdf:resource="&vegetable;raddish"/>
+        <rdfs:subPropertyOf rdf:resource="&vegetable;sowing"/>
+        <rdfs:range rdf:resource="&vegetable;spincah"/>
+        <rdfs:range rdf:resource="&vegetable;sweet_potato"/>
+        <rdfs:range rdf:resource="&vegetable;turnip"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#s_nursery -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;s_nursery">
+        <rdfs:range rdf:resource="&vegetable;brinjal"/>
+        <rdfs:range rdf:resource="&vegetable;cabbage"/>
+        <rdfs:range rdf:resource="&vegetable;capsicum"/>
+        <rdfs:range rdf:resource="&vegetable;cauliflower"/>
+        <rdfs:range rdf:resource="&vegetable;ginger"/>
+        <rdfs:domain rdf:resource="&vegetable;in_nursery"/>
+        <rdfs:range rdf:resource="&vegetable;lettuce"/>
+        <rdfs:range rdf:resource="&vegetable;luffa_gourd"/>
+        <rdfs:range rdf:resource="&vegetable;mint"/>
+        <rdfs:range rdf:resource="&vegetable;onion"/>
+        <rdfs:range rdf:resource="&vegetable;potato"/>
+        <rdfs:subPropertyOf rdf:resource="&vegetable;sowing"/>
+        <rdfs:range rdf:resource="&vegetable;tomato"/>
+        <rdfs:range rdf:resource="&vegetable;turmeric"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#sowing -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;sowing"/>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#stored_cann -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;stored_cann">
+        <rdfs:subPropertyOf rdf:resource="&vegetable;can_be_stored"/>
+        <rdfs:range rdf:resource="&vegetable;canning"/>
+        <rdfs:domain rdf:resource="&vegetable;cucumber"/>
+        <rdfs:domain rdf:resource="&vegetable;kidney_bean"/>
+        <rdfs:domain rdf:resource="&vegetable;peas"/>
+        <rdfs:domain rdf:resource="&vegetable;tomato"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#stored_dry -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;stored_dry">
+        <rdfs:subPropertyOf rdf:resource="&vegetable;can_be_stored"/>
+        <rdfs:domain rdf:resource="&vegetable;fenugreek"/>
+        <rdfs:domain rdf:resource="&vegetable;garlic"/>
+        <rdfs:domain rdf:resource="&vegetable;ginger"/>
+        <rdfs:domain rdf:resource="&vegetable;hot_peppers"/>
+        <rdfs:domain rdf:resource="&vegetable;kidney_bean"/>
+        <rdfs:domain rdf:resource="&vegetable;luffa_gourd"/>
+        <rdfs:domain rdf:resource="&vegetable;mint"/>
+        <rdfs:domain rdf:resource="&vegetable;onion"/>
+        <rdfs:domain rdf:resource="&vegetable;peas"/>
+        <rdfs:domain rdf:resource="&vegetable;potato"/>
+        <rdfs:range rdf:resource="&vegetable;simple_dry"/>
+        <rdfs:domain rdf:resource="&vegetable;spincah"/>
+        <rdfs:domain rdf:resource="&vegetable;sweet_potato"/>
+        <rdfs:domain rdf:resource="&vegetable;turmeric"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#stored_froz -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;stored_froz">
+        <rdfs:domain rdf:resource="&vegetable;Pumpkin"/>
+        <rdfs:domain rdf:resource="&vegetable;beetroot"/>
+        <rdfs:domain rdf:resource="&vegetable;bitter_gourd"/>
+        <rdfs:domain rdf:resource="&vegetable;brinjal"/>
+        <rdfs:domain rdf:resource="&vegetable;cabbage"/>
+        <rdfs:subPropertyOf rdf:resource="&vegetable;can_be_stored"/>
+        <rdfs:domain rdf:resource="&vegetable;capsicum"/>
+        <rdfs:domain rdf:resource="&vegetable;carrot"/>
+        <rdfs:domain rdf:resource="&vegetable;cauliflower"/>
+        <rdfs:domain rdf:resource="&vegetable;coriander"/>
+        <rdfs:domain rdf:resource="&vegetable;fenugreek"/>
+        <rdfs:range rdf:resource="&vegetable;frozen"/>
+        <rdfs:domain rdf:resource="&vegetable;garlic"/>
+        <rdfs:domain rdf:resource="&vegetable;ginger"/>
+        <rdfs:domain rdf:resource="&vegetable;hot_peppers"/>
+        <rdfs:domain rdf:resource="&vegetable;kidney_bean"/>
+        <rdfs:domain rdf:resource="&vegetable;lady_finger"/>
+        <rdfs:domain rdf:resource="&vegetable;lettuce"/>
+        <rdfs:domain rdf:resource="&vegetable;luffa_gourd"/>
+        <rdfs:domain rdf:resource="&vegetable;mint"/>
+        <rdfs:domain rdf:resource="&vegetable;onion"/>
+        <rdfs:domain rdf:resource="&vegetable;peas"/>
+        <rdfs:domain rdf:resource="&vegetable;potato"/>
+        <rdfs:domain rdf:resource="&vegetable;raddish"/>
+        <rdfs:domain rdf:resource="&vegetable;spincah"/>
+        <rdfs:domain rdf:resource="&vegetable;tomato"/>
+        <rdfs:domain rdf:resource="&vegetable;turnip"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#stored_pick -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;stored_pick">
+        <rdfs:domain rdf:resource="&vegetable;cabbage"/>
+        <rdfs:subPropertyOf rdf:resource="&vegetable;can_be_stored"/>
+        <rdfs:domain rdf:resource="&vegetable;carrot"/>
+        <rdfs:domain rdf:resource="&vegetable;cucumber"/>
+        <rdfs:domain rdf:resource="&vegetable;hot_peppers"/>
+        <rdfs:range rdf:resource="&vegetable;pickels"/>
+        <rdfs:domain rdf:resource="&vegetable;raddish"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#used_as_fert -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;used_as_fert">
+        <rdfs:range rdf:resource="&vegetable;above_ground_vegetables"/>
+        <rdfs:range rdf:resource="&vegetable;mix_type"/>
+        <rdfs:subPropertyOf rdf:resource="&vegetable;needs_care"/>
+        <rdfs:domain rdf:resource="&vegetable;org_fertilizers"/>
+        <rdfs:range rdf:resource="&vegetable;root_vegetables"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#yes -->
+
+    <owl:ObjectProperty rdf:about="&vegetable;yes">
+        <rdfs:domain rdf:resource="&vegetable;beetroot"/>
+        <rdfs:subPropertyOf rdf:resource="&vegetable;can_be_stored"/>
+        <rdfs:domain rdf:resource="&vegetable;carrot"/>
+        <rdfs:domain rdf:resource="&vegetable;garlic"/>
+        <rdfs:domain rdf:resource="&vegetable;ginger"/>
+        <rdfs:domain rdf:resource="&vegetable;onion"/>
+        <rdfs:domain rdf:resource="&vegetable;potato"/>
+        <rdfs:domain rdf:resource="&vegetable;raddish"/>
+        <rdfs:range rdf:resource="&vegetable;store"/>
+        <rdfs:domain rdf:resource="&vegetable;sweet_potato"/>
+        <rdfs:domain rdf:resource="&vegetable;tomato"/>
+        <rdfs:domain rdf:resource="&vegetable;turmeric"/>
+        <rdfs:domain rdf:resource="&vegetable;turnip"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#grows_in_month -->
+
+    <owl:DatatypeProperty rdf:about="&vegetable;grows_in_month">
+        <rdfs:domain rdf:resource="&vegetable;March"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#15_32 -->
+
+    <owl:Class rdf:about="&vegetable;15_32">
+        <rdfs:subClassOf rdf:resource="&vegetable;temperature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#15_to_below0 -->
+
+    <owl:Class rdf:about="&vegetable;15_to_below0">
+        <rdfs:subClassOf rdf:resource="&vegetable;temperature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#33_45 -->
+
+    <owl:Class rdf:about="&vegetable;33_45">
+        <rdfs:subClassOf rdf:resource="&vegetable;temperature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#A -->
+
+    <owl:Class rdf:about="&vegetable;A">
+        <rdfs:subClassOf rdf:resource="&vegetable;vitamin"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#April -->
+
+    <owl:Class rdf:about="&vegetable;April">
+        <rdfs:subClassOf rdf:resource="&vegetable;byMonth"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#B -->
+
+    <owl:Class rdf:about="&vegetable;B">
+        <rdfs:subClassOf rdf:resource="&vegetable;vitamin"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#C -->
+
+    <owl:Class rdf:about="&vegetable;C">
+        <rdfs:subClassOf rdf:resource="&vegetable;vitamin"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#E -->
+
+    <owl:Class rdf:about="&vegetable;E">
+        <rdfs:subClassOf rdf:resource="&vegetable;vitamin"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#February -->
+
+    <owl:Class rdf:about="&vegetable;February">
+        <rdfs:subClassOf rdf:resource="&vegetable;byMonth"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#January -->
+
+    <owl:Class rdf:about="&vegetable;January">
+        <rdfs:subClassOf rdf:resource="&vegetable;byMonth"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#K -->
+
+    <owl:Class rdf:about="&vegetable;K">
+        <rdfs:subClassOf rdf:resource="&vegetable;vitamin"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#March -->
+
+    <owl:Class rdf:about="&vegetable;March">
+        <rdfs:subClassOf rdf:resource="&vegetable;byMonth"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#May -->
+
+    <owl:Class rdf:about="&vegetable;May">
+        <rdfs:subClassOf rdf:resource="&vegetable;byMonth"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#Pumpkin -->
+
+    <owl:Class rdf:about="&vegetable;Pumpkin">
+        <rdfs:subClassOf rdf:resource="&vegetable;a_vine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#a_small_plant -->
+
+    <owl:Class rdf:about="&vegetable;a_small_plant">
+        <rdfs:subClassOf rdf:resource="&vegetable;above_ground_vegetables"/>
+        <owl:disjointWith rdf:resource="&vegetable;a_vine"/>
+        <rdfs:comment rdf:datatype="&xsd;string">these vegetable plants height varies from 2-4 foot
+</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#a_vine -->
+
+    <owl:Class rdf:about="&vegetable;a_vine">
+        <rdfs:subClassOf rdf:resource="&vegetable;above_ground_vegetables"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#above_ground_vegetables -->
+
+    <owl:Class rdf:about="&vegetable;above_ground_vegetables">
+        <rdfs:subClassOf rdf:resource="&vegetable;type"/>
+        <owl:disjointWith rdf:resource="&vegetable;mix_type"/>
+        <owl:disjointWith rdf:resource="&vegetable;root_vegetables"/>
+        <rdfs:comment rdf:datatype="&xsd;string">It includes all vegetable plants whose leaf or fruit are used as vegetable</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#aerophonics -->
+
+    <owl:Class rdf:about="&vegetable;aerophonics">
+        <rdfs:subClassOf rdf:resource="&vegetable;aqua_farming"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#after1_week -->
+
+    <owl:Class rdf:about="&vegetable;after1_week">
+        <rdfs:subClassOf rdf:resource="&vegetable;irrigation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#after2_week -->
+
+    <owl:Class rdf:about="&vegetable;after2_week">
+        <rdfs:subClassOf rdf:resource="&vegetable;irrigation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#after3_4d -->
+
+    <owl:Class rdf:about="&vegetable;after3_4d">
+        <rdfs:subClassOf rdf:resource="&vegetable;irrigation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#all_seasons -->
+
+    <owl:Class rdf:about="&vegetable;all_seasons">
+        <rdfs:subClassOf rdf:resource="&vegetable;seasons"/>
+        <rdfs:comment>contains vegetables that can are whole year</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#anti_oxidant -->
+
+    <owl:Class rdf:about="&vegetable;anti_oxidant">
+        <rdfs:subClassOf rdf:resource="&vegetable;nutrition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#aqua_farming -->
+
+    <owl:Class rdf:about="&vegetable;aqua_farming">
+        <rdfs:subClassOf rdf:resource="&vegetable;vegetable"/>
+        <rdfs:comment>here aqua farming means using water in place of soil to grow vegetabls. hydrophonics is actually main thing. aerophonics is one of types of hydrophonics. any vegetable can be grown in hydro or aerophonics. You need to just follow the instructions of hydrophonic or aerophonic with general difference in amount of water used along minerals. </rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#august -->
+
+    <owl:Class rdf:about="&vegetable;august">
+        <rdfs:subClassOf rdf:resource="&vegetable;byMonth"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#ayes -->
+
+    <owl:Class rdf:about="&vegetable;ayes">
+        <rdfs:subClassOf rdf:resource="&vegetable;aerophonics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#beetroot -->
+
+    <owl:Class rdf:about="&vegetable;beetroot">
+        <rdfs:subClassOf rdf:resource="&vegetable;r_small_plant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#bitter_gourd -->
+
+    <owl:Class rdf:about="&vegetable;bitter_gourd">
+        <rdfs:subClassOf rdf:resource="&vegetable;a_vine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#brinjal -->
+
+    <owl:Class rdf:about="&vegetable;brinjal">
+        <rdfs:subClassOf rdf:resource="&vegetable;a_small_plant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#byMonth -->
+
+    <owl:Class rdf:about="&vegetable;byMonth">
+        <rdfs:subClassOf rdf:resource="&vegetable;vegetable"/>
+        <rdfs:comment rdf:datatype="&xsd;string">It includes months of years in which a vegetable can be sow, and grow. 
+
+
+ </rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#cabbage -->
+
+    <owl:Class rdf:about="&vegetable;cabbage">
+        <rdfs:subClassOf rdf:resource="&vegetable;a_small_plant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#calcium -->
+
+    <owl:Class rdf:about="&vegetable;calcium">
+        <rdfs:subClassOf rdf:resource="&vegetable;minerals"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#cancer -->
+
+    <owl:Class rdf:about="&vegetable;cancer">
+        <rdfs:subClassOf rdf:resource="&vegetable;cures_diseases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#canning -->
+
+    <owl:Class rdf:about="&vegetable;canning">
+        <rdfs:subClassOf rdf:resource="&vegetable;store"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#capsicum -->
+
+    <owl:Class rdf:about="&vegetable;capsicum">
+        <rdfs:subClassOf rdf:resource="&vegetable;a_small_plant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#care -->
+
+    <owl:Class rdf:about="&vegetable;care">
+        <rdfs:subClassOf rdf:resource="&vegetable;vegetable"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#carrot -->
+
+    <owl:Class rdf:about="&vegetable;carrot">
+        <rdfs:subClassOf rdf:resource="&vegetable;r_small_plant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#cauliflower -->
+
+    <owl:Class rdf:about="&vegetable;cauliflower">
+        <rdfs:subClassOf rdf:resource="&vegetable;a_small_plant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#common_names -->
+
+    <owl:Class rdf:about="&vegetable;common_names">
+        <rdfs:subClassOf rdf:resource="&vegetable;name"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#compatible_plants -->
+
+    <owl:Class rdf:about="&vegetable;compatible_plants">
+        <rdfs:subClassOf rdf:resource="&vegetable;vegetable"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#cook_and_eat -->
+
+    <owl:Class rdf:about="&vegetable;cook_and_eat">
+        <rdfs:subClassOf rdf:resource="&vegetable;usage"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#coriander -->
+
+    <owl:Class rdf:about="&vegetable;coriander">
+        <rdfs:subClassOf rdf:resource="&vegetable;a_small_plant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#cough_and_fever -->
+
+    <owl:Class rdf:about="&vegetable;cough_and_fever">
+        <rdfs:subClassOf rdf:resource="&vegetable;cures_diseases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#cucumber -->
+
+    <owl:Class rdf:about="&vegetable;cucumber">
+        <rdfs:subClassOf rdf:resource="&vegetable;a_vine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#cures_diseases -->
+
+    <owl:Class rdf:about="&vegetable;cures_diseases">
+        <rdfs:subClassOf rdf:resource="&vegetable;vegetable"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#december -->
+
+    <owl:Class rdf:about="&vegetable;december">
+        <rdfs:subClassOf rdf:resource="&vegetable;byMonth"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#diabetes -->
+
+    <owl:Class rdf:about="&vegetable;diabetes">
+        <rdfs:subClassOf rdf:resource="&vegetable;cures_diseases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#direct_in_field -->
+
+    <owl:Class rdf:about="&vegetable;direct_in_field">
+        <rdfs:subClassOf rdf:resource="&vegetable;sow_method"/>
+        <owl:disjointWith rdf:resource="&vegetable;in_nursery"/>
+        <rdfs:comment>it means seeds are thrown direct in filed or bed for sowing</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#droppings -->
+
+    <owl:Class rdf:about="&vegetable;droppings">
+        <rdfs:subClassOf rdf:resource="&vegetable;org_fertilizers"/>
+        <rdfs:comment>animals and birds urine, poo (dunk and droppings) act as natural fertilizers and didnot contain any harmful chemicals.. using them as fettilizer also better for environment and reduces pollution. 
+</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#egg_shells -->
+
+    <owl:Class rdf:about="&vegetable;egg_shells">
+        <rdfs:subClassOf rdf:resource="&vegetable;org_fertilizers"/>
+        <rdfs:comment>chrush egg shells and use as a organic fertilizer for plants. a good source of calcium to plants.
+</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#everyday -->
+
+    <owl:Class rdf:about="&vegetable;everyday">
+        <rdfs:subClassOf rdf:resource="&vegetable;irrigation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#fenugreek -->
+
+    <owl:Class rdf:about="&vegetable;fenugreek">
+        <rdfs:subClassOf rdf:resource="&vegetable;a_small_plant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#fibre -->
+
+    <owl:Class rdf:about="&vegetable;fibre">
+        <rdfs:subClassOf rdf:resource="&vegetable;nutrition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#folic_acid -->
+
+    <owl:Class rdf:about="&vegetable;folic_acid">
+        <rdfs:subClassOf rdf:resource="&vegetable;vitamin"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#frozen -->
+
+    <owl:Class rdf:about="&vegetable;frozen">
+        <rdfs:subClassOf rdf:resource="&vegetable;store"/>
+        <rdfs:comment>it means freeze in the refrigerator. any raw vegetable peeled or without peeling, cuts into pieces and put into a container/jar/plastic bag and freeze that bag/jar. Other option is simply boil/cook the vegetable and put it into some jar and freeze it. 
+But it&apos;s better to consume fresh vegetables, don&apos;t freeze them. or if you really need then use the frozen vegetable max within one week otherwise nutritions and vitamins of vegetable are lost. thank you  </rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#garlic -->
+
+    <owl:Class rdf:about="&vegetable;garlic">
+        <rdfs:subClassOf rdf:resource="&vegetable;r_small_plant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#ginger -->
+
+    <owl:Class rdf:about="&vegetable;ginger">
+        <rdfs:subClassOf rdf:resource="&vegetable;r_small_plant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#haert_problems -->
+
+    <owl:Class rdf:about="&vegetable;haert_problems">
+        <rdfs:subClassOf rdf:resource="&vegetable;cures_diseases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#high_bp -->
+
+    <owl:Class rdf:about="&vegetable;high_bp">
+        <rdfs:subClassOf rdf:resource="&vegetable;cures_diseases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#hot_peppers -->
+
+    <owl:Class rdf:about="&vegetable;hot_peppers">
+        <rdfs:subClassOf rdf:resource="&vegetable;a_small_plant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#hydrophonics -->
+
+    <owl:Class rdf:about="&vegetable;hydrophonics">
+        <rdfs:subClassOf rdf:resource="&vegetable;aqua_farming"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#hyes -->
+
+    <owl:Class rdf:about="&vegetable;hyes">
+        <rdfs:subClassOf rdf:resource="&vegetable;hydrophonics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#in_nursery -->
+
+    <owl:Class rdf:about="&vegetable;in_nursery">
+        <rdfs:subClassOf rdf:resource="&vegetable;sow_method"/>
+        <rdfs:comment>first seeds or bulbs of a vegetable are sow in a small place or pot depending upon the amount of seeds or bulbs. then after some time seperately when they grew planted in the field or bed at some distance from each other
+</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#incompatible_plants -->
+
+    <owl:Class rdf:about="&vegetable;incompatible_plants">
+        <rdfs:subClassOf rdf:resource="&vegetable;vegetable"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#iron -->
+
+    <owl:Class rdf:about="&vegetable;iron">
+        <rdfs:subClassOf rdf:resource="&vegetable;minerals"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#irrigation -->
+
+    <owl:Class rdf:about="&vegetable;irrigation">
+        <rdfs:subClassOf rdf:resource="&vegetable;care"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#july -->
+
+    <owl:Class rdf:about="&vegetable;july">
+        <rdfs:subClassOf rdf:resource="&vegetable;byMonth"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#june -->
+
+    <owl:Class rdf:about="&vegetable;june">
+        <rdfs:subClassOf rdf:resource="&vegetable;byMonth"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#kidney_bean -->
+
+    <owl:Class rdf:about="&vegetable;kidney_bean">
+        <rdfs:subClassOf rdf:resource="&vegetable;a_small_plant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#lady_finger -->
+
+    <owl:Class rdf:about="&vegetable;lady_finger">
+        <rdfs:subClassOf rdf:resource="&vegetable;a_small_plant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#lettuce -->
+
+    <owl:Class rdf:about="&vegetable;lettuce">
+        <rdfs:subClassOf rdf:resource="&vegetable;a_small_plant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#low_bp -->
+
+    <owl:Class rdf:about="&vegetable;low_bp">
+        <rdfs:subClassOf rdf:resource="&vegetable;cures_diseases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#low_sugar -->
+
+    <owl:Class rdf:about="&vegetable;low_sugar">
+        <rdfs:subClassOf rdf:resource="&vegetable;cures_diseases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#luffa_gourd -->
+
+    <owl:Class rdf:about="&vegetable;luffa_gourd">
+        <rdfs:subClassOf rdf:resource="&vegetable;a_vine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#magnesium -->
+
+    <owl:Class rdf:about="&vegetable;magnesium">
+        <rdfs:subClassOf rdf:resource="&vegetable;minerals"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#manganese -->
+
+    <owl:Class rdf:about="&vegetable;manganese">
+        <rdfs:subClassOf rdf:resource="&vegetable;minerals"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#minerals -->
+
+    <owl:Class rdf:about="&vegetable;minerals">
+        <rdfs:subClassOf rdf:resource="&vegetable;nutrition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#mint -->
+
+    <owl:Class rdf:about="&vegetable;mint">
+        <rdfs:subClassOf rdf:resource="&vegetable;a_small_plant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#mix_type -->
+
+    <owl:Class rdf:about="&vegetable;mix_type">
+        <rdfs:subClassOf rdf:resource="&vegetable;type"/>
+        <owl:disjointWith rdf:resource="&vegetable;root_vegetables"/>
+        <rdfs:comment rdf:datatype="&xsd;string">a plant both roots and leafs or fruit is used as vegetable</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#name -->
+
+    <owl:Class rdf:about="&vegetable;name">
+        <rdfs:subClassOf rdf:resource="&vegetable;vegetable"/>
+        <rdfs:comment rdf:datatype="&xsd;string">name includes both scietific name and common name of a vegetable
+
+</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#november -->
+
+    <owl:Class rdf:about="&vegetable;november">
+        <rdfs:subClassOf rdf:resource="&vegetable;byMonth"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#nutrition -->
+
+    <owl:Class rdf:about="&vegetable;nutrition">
+        <rdfs:subClassOf rdf:resource="&vegetable;vegetable"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#october -->
+
+    <owl:Class rdf:about="&vegetable;october">
+        <rdfs:subClassOf rdf:resource="&vegetable;byMonth"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#onion -->
+
+    <owl:Class rdf:about="&vegetable;onion">
+        <rdfs:subClassOf rdf:resource="&vegetable;r_small_plant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#org_fertilizers -->
+
+    <owl:Class rdf:about="&vegetable;org_fertilizers">
+        <rdfs:subClassOf rdf:resource="&vegetable;care"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#org_pest_control -->
+
+    <owl:Class rdf:about="&vegetable;org_pest_control">
+        <rdfs:subClassOf rdf:resource="&vegetable;care"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#peas -->
+
+    <owl:Class rdf:about="&vegetable;peas">
+        <rdfs:subClassOf rdf:resource="&vegetable;a_vine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#peels -->
+
+    <owl:Class rdf:about="&vegetable;peels">
+        <rdfs:subClassOf rdf:resource="&vegetable;org_fertilizers"/>
+        <rdfs:comment>veggetable and fruit skin that is peeled off before using them  can be used as a organic fertilizer. a lot of nuetrients and vitamins exists in the skin of vegetables and fruits. </rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#phosphorus -->
+
+    <owl:Class rdf:about="&vegetable;phosphorus">
+        <rdfs:subClassOf rdf:resource="&vegetable;minerals"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#pickels -->
+
+    <owl:Class rdf:about="&vegetable;pickels">
+        <rdfs:subClassOf rdf:resource="&vegetable;store"/>
+        <rdfs:comment>preserve food by cutting into pieces and preserve using salt, turmeric, oil or some other thing so that vegetable didn&apos;t get ruined.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#plant -->
+
+    <owl:Class rdf:about="&vegetable;plant"/>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#potassium -->
+
+    <owl:Class rdf:about="&vegetable;potassium">
+        <rdfs:subClassOf rdf:resource="&vegetable;minerals"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#potato -->
+
+    <owl:Class rdf:about="&vegetable;potato">
+        <rdfs:subClassOf rdf:resource="&vegetable;r_small_plant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#protien -->
+
+    <owl:Class rdf:about="&vegetable;protien">
+        <rdfs:subClassOf rdf:resource="&vegetable;nutrition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#r_small_plant -->
+
+    <owl:Class rdf:about="&vegetable;r_small_plant">
+        <rdfs:subClassOf rdf:resource="&vegetable;root_vegetables"/>
+        <owl:disjointWith rdf:resource="&vegetable;r_vine"/>
+        <rdfs:comment rdf:datatype="&xsd;string">root vegetables whose plant is small size ranges from of 1-3 foot</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#r_vine -->
+
+    <owl:Class rdf:about="&vegetable;r_vine">
+        <rdfs:subClassOf rdf:resource="&vegetable;root_vegetables"/>
+        <rdfs:comment rdf:datatype="&xsd;string">root vegetables whose plant is type of vine above ground</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#raddish -->
+
+    <owl:Class rdf:about="&vegetable;raddish">
+        <rdfs:subClassOf rdf:resource="&vegetable;mix_type"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#raw -->
+
+    <owl:Class rdf:about="&vegetable;raw">
+        <rdfs:subClassOf rdf:resource="&vegetable;cook_and_eat"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#root_vegetables -->
+
+    <owl:Class rdf:about="&vegetable;root_vegetables">
+        <rdfs:subClassOf rdf:resource="&vegetable;type"/>
+        <rdfs:comment rdf:datatype="&xsd;string">Includes all vegetable plants whose roots are used as  vegetable
+</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#salt_gravy -->
+
+    <owl:Class rdf:about="&vegetable;salt_gravy">
+        <rdfs:subClassOf rdf:resource="&vegetable;cook_and_eat"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#scientific_name -->
+
+    <owl:Class rdf:about="&vegetable;scientific_name">
+        <rdfs:subClassOf rdf:resource="&vegetable;name"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#seasons -->
+
+    <owl:Class rdf:about="&vegetable;seasons">
+        <rdfs:subClassOf rdf:resource="&vegetable;vegetable"/>
+        <rdfs:comment rdf:datatype="&xsd;string">It includes sowing seasons that spans generally from 2 to 2.5 months.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#september -->
+
+    <owl:Class rdf:about="&vegetable;september">
+        <rdfs:subClassOf rdf:resource="&vegetable;byMonth"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#simple_dry -->
+
+    <owl:Class rdf:about="&vegetable;simple_dry">
+        <rdfs:subClassOf rdf:resource="&vegetable;store"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#sow_method -->
+
+    <owl:Class rdf:about="&vegetable;sow_method">
+        <rdfs:subClassOf rdf:resource="&vegetable;vegetable"/>
+        <rdfs:comment rdf:datatype="&xsd;string">method of sowing a vegetable
+</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#spincah -->
+
+    <owl:Class rdf:about="&vegetable;spincah">
+        <rdfs:subClassOf rdf:resource="&vegetable;a_small_plant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#store -->
+
+    <owl:Class rdf:about="&vegetable;store">
+        <rdfs:subClassOf rdf:resource="&vegetable;usage"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#stress -->
+
+    <owl:Class rdf:about="&vegetable;stress">
+        <rdfs:subClassOf rdf:resource="&vegetable;cures_diseases"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#sulfur -->
+
+    <owl:Class rdf:about="&vegetable;sulfur">
+        <rdfs:subClassOf rdf:resource="&vegetable;minerals"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#summer -->
+
+    <owl:Class rdf:about="&vegetable;summer">
+        <rdfs:subClassOf rdf:resource="&vegetable;seasons"/>
+        <owl:disjointWith rdf:resource="&vegetable;winter"/>
+        <rdfs:comment>vegetables that are in summer season in pakistan ranging from march to october months
+</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#sweet -->
+
+    <owl:Class rdf:about="&vegetable;sweet">
+        <rdfs:subClassOf rdf:resource="&vegetable;cook_and_eat"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#sweet_potato -->
+
+    <owl:Class rdf:about="&vegetable;sweet_potato">
+        <rdfs:subClassOf rdf:resource="&vegetable;r_vine"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#temperature -->
+
+    <owl:Class rdf:about="&vegetable;temperature">
+        <rdfs:subClassOf rdf:resource="&vegetable;care"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#tomato -->
+
+    <owl:Class rdf:about="&vegetable;tomato">
+        <rdfs:subClassOf rdf:resource="&vegetable;a_small_plant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#turmeric -->
+
+    <owl:Class rdf:about="&vegetable;turmeric">
+        <rdfs:subClassOf rdf:resource="&vegetable;r_small_plant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#turnip -->
+
+    <owl:Class rdf:about="&vegetable;turnip">
+        <rdfs:subClassOf rdf:resource="&vegetable;mix_type"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#type -->
+
+    <owl:Class rdf:about="&vegetable;type">
+        <rdfs:subClassOf rdf:resource="&vegetable;vegetable"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#usage -->
+
+    <owl:Class rdf:about="&vegetable;usage">
+        <rdfs:subClassOf rdf:resource="&vegetable;vegetable"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#vegetable -->
+
+    <owl:Class rdf:about="&vegetable;vegetable">
+        <rdfs:subClassOf rdf:resource="&vegetable;plant"/>
+        <rdfs:comment>Organic vegetables sow, grow, along with common and scietific names</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#vitamin -->
+
+    <owl:Class rdf:about="&vegetable;vitamin">
+        <rdfs:subClassOf rdf:resource="&vegetable;nutrition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#winter -->
+
+    <owl:Class rdf:about="&vegetable;winter">
+        <rdfs:subClassOf rdf:resource="&vegetable;seasons"/>
+        <rdfs:comment>vegetables that are from october to march months (in winter) according to pakistani climate</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#zinc -->
+
+    <owl:Class rdf:about="&vegetable;zinc">
+        <rdfs:subClassOf rdf:resource="&vegetable;minerals"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#Abelmoschus_esculentus -->
+
+    <owl:NamedIndividual rdf:about="&vegetable;Abelmoschus_esculentus">
+        <rdf:type rdf:resource="&vegetable;lady_finger"/>
+        <have_lady rdf:resource="&vegetable;Abelmoschus_esculentus"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#Allium_Sativum -->
+
+    <owl:NamedIndividual rdf:about="&vegetable;Allium_Sativum">
+        <rdf:type rdf:resource="&vegetable;garlic"/>
+        <have_garl rdf:resource="&vegetable;Allium_Sativum"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#Allium_cepa -->
+
+    <owl:NamedIndividual rdf:about="&vegetable;Allium_cepa">
+        <rdf:type rdf:resource="&vegetable;onion"/>
+        <have_onio rdf:resource="&vegetable;Allium_cepa"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#Brassica_oleracea -->
+
+    <owl:NamedIndividual rdf:about="&vegetable;Brassica_oleracea">
+        <rdf:type rdf:resource="&vegetable;cauliflower"/>
+        <have_coli rdf:resource="&vegetable;Brassica_oleracea"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#Capsicum_Fruits_scence -->
+
+    <owl:NamedIndividual rdf:about="&vegetable;Capsicum_Fruits_scence">
+        <rdf:type rdf:resource="&vegetable;capsicum"/>
+        <have_caps rdf:resource="&vegetable;Capsicum_Fruits_scence"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#Capsicum_annuum -->
+
+    <owl:NamedIndividual rdf:about="&vegetable;Capsicum_annuum">
+        <rdf:type rdf:resource="&vegetable;hot_peppers"/>
+        <hvae_chill rdf:resource="&vegetable;Capsicum_annuum"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#Coriandrum_sativum -->
+
+    <owl:NamedIndividual rdf:about="&vegetable;Coriandrum_sativum">
+        <rdf:type rdf:resource="&vegetable;coriander"/>
+        <have_cori rdf:resource="&vegetable;Coriandrum_sativum"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#Cucumis_sativas -->
+
+    <owl:NamedIndividual rdf:about="&vegetable;Cucumis_sativas">
+        <rdf:type rdf:resource="&vegetable;cucumber"/>
+        <have_cucu rdf:resource="&vegetable;Cucumis_sativas"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#Curcuma_longa -->
+
+    <owl:NamedIndividual rdf:about="&vegetable;Curcuma_longa">
+        <rdf:type rdf:resource="&vegetable;turmeric"/>
+        <have_turm rdf:resource="&vegetable;Curcuma_longa"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#Daucas_carota -->
+
+    <owl:NamedIndividual rdf:about="&vegetable;Daucas_carota">
+        <rdf:type rdf:resource="&vegetable;carrot"/>
+        <have_carr rdf:resource="&vegetable;Daucas_carota"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#Ipomoea_batatas -->
+
+    <owl:NamedIndividual rdf:about="&vegetable;Ipomoea_batatas">
+        <rdf:type rdf:resource="&vegetable;sweet_potato"/>
+        <have_swee rdf:resource="&vegetable;Ipomoea_batatas"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#Lactuca_sativa -->
+
+    <owl:NamedIndividual rdf:about="&vegetable;Lactuca_sativa">
+        <rdf:type rdf:resource="&vegetable;lettuce"/>
+        <have_lett rdf:resource="&vegetable;Lactuca_sativa"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#Luffa_aegyptiaca_/_Luffa_cylindrica -->
+
+    <owl:NamedIndividual rdf:about="&vegetable;Luffa_aegyptiaca_/_Luffa_cylindrica">
+        <rdf:type rdf:resource="&vegetable;luffa_gourd"/>
+        <have_luff rdf:resource="&vegetable;Luffa_aegyptiaca_/_Luffa_cylindrica"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#Lycopersican_esculentum -->
+
+    <owl:NamedIndividual rdf:about="&vegetable;Lycopersican_esculentum">
+        <rdf:type rdf:resource="&vegetable;tomato"/>
+        <have_toma rdf:resource="&vegetable;Lycopersican_esculentum"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#Mentha_arvensis -->
+
+    <owl:NamedIndividual rdf:about="&vegetable;Mentha_arvensis">
+        <rdf:type rdf:resource="&vegetable;mint"/>
+        <have_mint rdf:resource="&vegetable;Mentha_arvensis"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#Momordica_charantia -->
+
+    <owl:NamedIndividual rdf:about="&vegetable;Momordica_charantia">
+        <rdf:type rdf:resource="&vegetable;bitter_gourd"/>
+        <have_bitt rdf:resource="&vegetable;Momordica_charantia"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#Phaseolus_vulgaris -->
+
+    <owl:NamedIndividual rdf:about="&vegetable;Phaseolus_vulgaris">
+        <rdf:type rdf:resource="&vegetable;kidney_bean"/>
+        <have_bean rdf:resource="&vegetable;Phaseolus_vulgaris"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#Pisum_sativam -->
+
+    <owl:NamedIndividual rdf:about="&vegetable;Pisum_sativam">
+        <rdf:type rdf:resource="&vegetable;peas"/>
+        <have_peas rdf:resource="&vegetable;Pisum_sativam"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#Raphanus_sativus -->
+
+    <owl:NamedIndividual rdf:about="&vegetable;Raphanus_sativus">
+        <rdf:type rdf:resource="&vegetable;raddish"/>
+        <have_radd rdf:resource="&vegetable;Raphanus_sativus"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#Solanum_melongena -->
+
+    <owl:NamedIndividual rdf:about="&vegetable;Solanum_melongena">
+        <rdf:type rdf:resource="&vegetable;brinjal"/>
+        <have_brin rdf:resource="&vegetable;Solanum_melongena"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#Solanum_tubersum -->
+
+    <owl:NamedIndividual rdf:about="&vegetable;Solanum_tubersum">
+        <rdf:type rdf:resource="&vegetable;potato"/>
+        <have_potato rdf:resource="&vegetable;Solanum_tubersum"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#Spinacia_oleracea -->
+
+    <owl:NamedIndividual rdf:about="&vegetable;Spinacia_oleracea">
+        <rdf:type rdf:resource="&vegetable;spincah"/>
+        <have_spin rdf:resource="&vegetable;Spinacia_oleracea"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#Zingiber_officinale -->
+
+    <owl:NamedIndividual rdf:about="&vegetable;Zingiber_officinale">
+        <rdf:type rdf:resource="&vegetable;ginger"/>
+        <have_ging rdf:resource="&vegetable;Zingiber_officinale"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#adrak -->
+
+    <owl:NamedIndividual rdf:about="&vegetable;adrak">
+        <rdf:type rdf:resource="&vegetable;ginger"/>
+        <is_as_adra rdf:resource="&vegetable;adrak"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#aloo -->
+
+    <owl:NamedIndividual rdf:about="&vegetable;aloo">
+        <rdf:type rdf:resource="&vegetable;potato"/>
+        <is_as_pota rdf:resource="&vegetable;aloo"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#baingun -->
+
+    <owl:NamedIndividual rdf:about="&vegetable;baingun">
+        <rdf:type rdf:resource="&vegetable;brinjal"/>
+        <is_as_bain rdf:resource="&vegetable;baingun"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#bhindi -->
+
+    <owl:NamedIndividual rdf:about="&vegetable;bhindi">
+        <rdf:type rdf:resource="&vegetable;lady_finger"/>
+        <is_as_bhin rdf:resource="&vegetable;aloo"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#bund_gobhi -->
+
+    <owl:NamedIndividual rdf:about="&vegetable;bund_gobhi">
+        <rdf:type rdf:resource="&vegetable;cabbage"/>
+        <is_as_bndg rdf:resource="&vegetable;bund_gobhi"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#chuqander -->
+
+    <owl:NamedIndividual rdf:about="&vegetable;chuqander">
+        <rdf:type rdf:resource="&vegetable;beetroot"/>
+        <is_as_chuq rdf:resource="&vegetable;chuqander"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#dhanya -->
+
+    <owl:NamedIndividual rdf:about="&vegetable;dhanya">
+        <rdf:type rdf:resource="&vegetable;coriander"/>
+        <is_as_dhan rdf:resource="&vegetable;dhanya"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#gajar -->
+
+    <owl:NamedIndividual rdf:about="&vegetable;gajar">
+        <rdf:type rdf:resource="&vegetable;carrot"/>
+        <is_as_gajj rdf:resource="&vegetable;gajar"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#kadoo -->
+
+    <owl:NamedIndividual rdf:about="&vegetable;kadoo">
+        <rdf:type rdf:resource="&vegetable;Pumpkin"/>
+        <is_as_kado rdf:resource="&vegetable;kadoo"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#kali_tori -->
+
+    <owl:NamedIndividual rdf:about="&vegetable;kali_tori">
+        <rdf:type rdf:resource="&vegetable;luffa_gourd"/>
+        <is_as_kali rdf:resource="&vegetable;kali_tori"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#kheera -->
+
+    <owl:NamedIndividual rdf:about="&vegetable;kheera">
+        <rdf:type rdf:resource="&vegetable;cucumber"/>
+        <is_as_kher rdf:resource="&vegetable;kheera"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#kraila -->
+
+    <owl:NamedIndividual rdf:about="&vegetable;kraila">
+        <rdf:type rdf:resource="&vegetable;bitter_gourd"/>
+        <is_as_krai rdf:resource="&vegetable;kraila"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#lehsan -->
+
+    <owl:NamedIndividual rdf:about="&vegetable;lehsan">
+        <rdf:type rdf:resource="&vegetable;garlic"/>
+        <is_as_lehs rdf:resource="&vegetable;lehsan"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#lobia -->
+
+    <owl:NamedIndividual rdf:about="&vegetable;lobia">
+        <rdf:type rdf:resource="&vegetable;kidney_bean"/>
+        <is_as_lobi rdf:resource="&vegetable;lobia"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#matar -->
+
+    <owl:NamedIndividual rdf:about="&vegetable;matar">
+        <rdf:type rdf:resource="&vegetable;peas"/>
+        <is_as_mata rdf:resource="&vegetable;matar"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#methi -->
+
+    <owl:NamedIndividual rdf:about="&vegetable;methi">
+        <rdf:type rdf:resource="&vegetable;fenugreek"/>
+        <is_as_meth rdf:resource="&vegetable;methi"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#mirch -->
+
+    <owl:NamedIndividual rdf:about="&vegetable;mirch">
+        <rdf:type rdf:resource="&vegetable;hot_peppers"/>
+        <is_as_mirc rdf:resource="&vegetable;mirch"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#mooli -->
+
+    <owl:NamedIndividual rdf:about="&vegetable;mooli">
+        <rdf:type rdf:resource="&vegetable;raddish"/>
+        <is_as_mool rdf:resource="&vegetable;mooli"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#palak -->
+
+    <owl:NamedIndividual rdf:about="&vegetable;palak">
+        <rdf:type rdf:resource="&vegetable;spincah"/>
+        <is_as_pala rdf:resource="&vegetable;palak"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#phool_ghobi -->
+
+    <owl:NamedIndividual rdf:about="&vegetable;phool_ghobi">
+        <rdf:type rdf:resource="&vegetable;cauliflower"/>
+        <is_as_phol rdf:resource="&vegetable;phool_ghobi"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#piyaz -->
+
+    <owl:NamedIndividual rdf:about="&vegetable;piyaz">
+        <rdf:type rdf:resource="&vegetable;onion"/>
+        <is_as_piya rdf:resource="&vegetable;piyaz"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#podina -->
+
+    <owl:NamedIndividual rdf:about="&vegetable;podina">
+        <rdf:type rdf:resource="&vegetable;mint"/>
+        <is_as_podi rdf:resource="&vegetable;podina"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#salad_pta -->
+
+    <owl:NamedIndividual rdf:about="&vegetable;salad_pta">
+        <rdf:type rdf:resource="&vegetable;lettuce"/>
+        <is_as_sladp rdf:resource="&vegetable;salad_pta"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#shaljam -->
+
+    <owl:NamedIndividual rdf:about="&vegetable;shaljam">
+        <rdf:type rdf:resource="&vegetable;turnip"/>
+        <is_as_shal rdf:resource="&vegetable;shaljam"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#shimla_mirch -->
+
+    <owl:NamedIndividual rdf:about="&vegetable;shimla_mirch">
+        <is_as_shimla rdf:resource="&vegetable;shimla_mirch"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#shkr_kandi -->
+
+    <owl:NamedIndividual rdf:about="&vegetable;shkr_kandi">
+        <rdf:type rdf:resource="&vegetable;sweet_potato"/>
+        <is_as_shkr rdf:resource="&vegetable;shkr_kandi"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/amna/ontologies/2023/3/vegetable#tamater -->
+
+    <owl:NamedIndividual rdf:about="&vegetable;tamater">
+        <rdf:type rdf:resource="&vegetable;tomato"/>
+        <is_as_toma rdf:resource="&vegetable;tamater"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+
